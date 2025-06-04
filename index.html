@@ -156,13 +156,13 @@
     <div id="countdown"></div>
   </div>  <script>
     const baseWords = [
-  "원사업자 의무준수", "하도급대금 연동제", "60일내 하도급대금 지급", "기술자료요구서 제공",
-  "상품정보제공고시", "그린워싱", "경제적 이해관계 표시", "하도급법 준수",
-  "다크패턴", "부당특약 설정 금지", "청약철회기간 7일",
-  "부당한 표시광고 근절", "청탁금지법 준수", "Integrity", "추천보증심사지침",
-  "구입 강제행위 금지", "AI시대 지식재산권", "계약 날인전 법무검토 완료", "컴플라이언스", "임직원간 상호존중"
+    "친환경 근거 필요", "탈퇴는 쉽게", "공정거래", "단가 인하, 미리 상의",  
+  "구두계약 금지", "판매목표 강제 금지", "준법은 습관", "꼼수는 리스크",  
+  "원칙 준수", "광고는 광고라 표기", "비방광고 금지",  
+  "모르는 링크 클릭 금지", "개인정보 최소 수집", "출력물 파쇄", "자료 암호화",  
+  "구입 강제행위 금지", "AI시대 지식재산권", "계약 날인전 법무검토 완료", "컴플라이언스" "임직원간 상호존중"
 ];
-    const shuffledWords = baseWords.sort(() => 0.5 - Math.random()).slice(0, 20);
+    const shuffledWords = baseWords.sort(() => 0.5 - Math.random()).slice(0, 15);
 
     const startBtn = document.getElementById("start-button");
     const restartBtn = document.getElementById("restart-btn");
@@ -174,7 +174,7 @@
 
     let fallingWords = [];
     let timerInterval, dropInterval, startTime;
-    let totalWords = 20;
+    let totalWords = 15;
     let typedCount = 0;
     let gameEnded = false;
     let fallSpeed = 1.5;
